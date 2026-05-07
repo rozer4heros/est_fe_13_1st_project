@@ -3,14 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- 유태구 -->
-    <header><h1>제목</h1></header>
+    <header class="d-flex justify-content-center">
+      <div class="container header-container d-flex justify-content-between">
+        <div class="logo-group d-flex align-items-center">
+          <a href="index.html"></a>
+          <h1>
+            <a href="index.html"><span class="ir">EST Camp</span></a>
+          </h1>
+        </div>
+        <nav>
+          <ul class="d-flex">
+            <li><a href="" class="nav-item">강좌보기</a></li>
+            <li><a href="" class="nav-item">지원하기</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- //유태구-->
 
     <!-- 조승아 -->
@@ -32,13 +56,58 @@
     <main>
       <!-- 유태구-->
       <section class="hero"></section>
-      <section class="employment-status"></section>
+      <section class="employment-status d-flex flex-column align-items-center">
+        <div class="d-flex flex-column align-items-center g-1">
+          <p class="heading-m">수료생 주요 취업 현황</p>
+          <p class="body-mp">
+            실무 역량을 입증한 수료생들은 IT업계 전반에서 활약하고 있습니다.
+          </p>
+        </div>
+        <div class="logo-carousel d-flex g-1">
+          <img src="image/carousel-tridge-logo.png" alt="tridge" />
+          <img src="image/carousel-navercloud-logo.png" alt="navercloud" />
+          <img src="image/carousel-weniv-logo.png" alt="weniv" />
+          <img src="image/carousel-inbody-logo.png" alt="weniv" />
+          <img src="image/carousel-hyundai-logo.png" alt="hyundai" />
+          <img src="image/carousel-est-logo.png" alt="est" />
+          <img src="image/carousel-thankscarbon-logo.png" alt="thankscarbon" />
+          <img src="image/carousel-evsis-logo.png" alt="evsis" />
+          <div class="mask-logo-carousel"></div>
+        </div>
+      </section>
       <!-- //유태구 -->
 
       <!-- 박소영 -->
-      <section class="top-slogan"></section>
+      <section class="top-slogan">
+        <h2 class="heading-s">기업이 원하는 인재가 되고 싶다면?</h2>
+        <h2 class="heading-xl"><span>이스트소프트</span>가 정답인 이유</h2>
+      </section>
       <section class="benefits"></section>
-      <section class="statistics"></section>
+      <section class="statistics d-flex justify-content-center">
+        <div class="container d-flex flex-column g-2">
+          <h2 class="heading-l">실무에 강한 교육, 결과로 증명합니다.</h2>
+          <div class="statistics-items-wrapper d-flex">
+            <div class="statistics-item">
+              <div>
+                <h6 class="heading-m">누적 수강생</h6>
+                <p class="heading-l">10,000+</p>
+              </div>
+            </div>
+            <div class="statistics-item">
+              <div>
+                <h6 class="heading-m">교육 만족도</h6>
+                <p class="heading-l">4.7점</p>
+              </div>
+            </div>
+            <div class="statistics-item">
+              <div>
+                <h6 class="heading-m">학습 완주율</h6>
+                <p class="heading-l">94.2%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- //박소영 -->
 
       <!-- 박채원 -->
@@ -196,7 +265,56 @@
       <!-- //조승아 -->
 
       <!-- 권유진 -->
-      <section class="est-content"></section>
+      <section class="est-content">
+        <div class="section-header">
+          <h2>이스트 캠프 콘텐츠</h2>
+          <p>이스트캠프의 <span>다양한 이야기</span>를 들어보세요!</p>
+        </div>
+
+        <div class="slider-container">
+          <button class="prev-btn" aria-label="이전"></button>
+          <div class="card-list">
+            <article class="est-item">
+              <div class="image">
+                <img src="content_2.png" alt="콘텐츠 이미지" />
+                <div class="card-body">
+                  <h3>부트캠프만으로 진짜 취업할수있을까?</h3>
+                  <p>
+                    청년 고용율의 내리막... 현실은 잔혹하지만, 돌파구는
+                    있습니다.
+                  </p>
+                  <a href="#" class="more-link">icon</a>
+                </div>
+              </div>
+              <div class="image">
+                <img src="content_1.png" alt="콘텐츠 이미지" />
+                <div class="card-body">
+                  <h3>우리는 조금 느렸지만, 분명 다릅니다</h3>
+                  <p>부트캠프 시장의 후발주자 ’이스트캠프’의 반란</p>
+                  <a href="#" class="more-link">icon</a>
+                </div>
+              </div>
+              <div class="image">
+                <img src="content_3.png" alt="콘텐츠 이미지" />
+                <div class="card-body">
+                  <h3>“저희를 믿고 한 걸음 내딛어 주세요”</h3>
+                  <p>이스트캠프 교육 운영 담당자 홍유라님의 릴레이 인터뷰</p>
+                  <a href="#" class="more-link">icon</a>
+                </div>
+              </div>
+              <div class="image">
+                <img src="content_4.png" alt="콘텐츠 이미지" />
+                <div class="card-body">
+                  <h3>“백엔드는 취업 자리가 비교적 많아요”</h3>
+                  <p>이스트 캠프 백엔드 개발 정동형 강사님의 릴레이 인터뷰</p>
+                  <a href="#" class="more-link">icon</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button class="next-btn" aria-label="다음"></button>
+        </div>
+      </section>
       <section class="faq"></section>
       <section class="deadline"></section>
     </main>

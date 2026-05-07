@@ -1,5 +1,6 @@
 @import url(normalize.css);
 @import url(reset.css);
+@import url(flex-utility.css);
 
 /* Variants */
 :root {
@@ -33,7 +34,7 @@
   --heading--s: 22px;
   --heading--x-s: 16px;
   --body--l: 28px;
-  --body--m: 20px;
+  --body--m-p: 20px;
   --body--m: 16px;
   --body--s: 14px;
   --nav--item: 24px;
@@ -51,7 +52,146 @@
 }
 
 /* Layout */
+.container {
+  width: 1272px;
+}
+.ir {
+  position: absolute;
+  inset: 100%;
+  width: 1px;
+  height: 1px;
+  text-indent: 65535px;
+  overflow: hidden;
+}
+main {
+  padding-top: 81px;
+}
+/* //Layout */
 
 /* Typography */
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+.heading-xl {
+  font-size: var(--heading--x-l);
+  line-height: var(--base-unit-x3);
+  font-weight: bold;
+  letter-spacing: 2%;
+}
+.heading-l {
+  font-size: var(--heading--l);
+  line-height: var(--base-unit-x2);
+  font-weight: bold;
+  letter-spacing: 2%;
+}
+.heading-m {
+  font-size: var(--heading--m);
+  line-height: var(--base-unit-x2);
+  font-weight: bold;
+}
+.heading-s {
+  font-size: var(--heading--s);
+  line-height: var(--base-unit);
+  font-weight: bold;
+}
+.heading-xs {
+  font-size: var(--heading--x-s);
+  line-height: var(--base-unit);
+  font-weight: 600;
+}
+.body-l {
+  font-size: var(--body--l);
+}
+.body-mp {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit);
+}
+.body-m {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit);
+}
+.body-s {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit);
+}
+.nav-item {
+  font-size: var(--nav--item);
+  line-height: var(--base-unit-x2);
+  font-weight: bold;
+}
+/* //Typography */
 
 /* Linked Buttons */
+.header-container nav a {
+  display: inline-block;
+  padding: 0px 12px;
+
+  background: var(--deep--green);
+  border-radius: 10px;
+  color: var(--ghost--gray);
+  box-shadow: none;
+
+  transition: 300ms ease-out;
+}
+.header-container nav a:hover {
+  color: var(--primary);
+  box-shadow: var(--highlight--register);
+}
+/* //Linked Buttons */
+
+/* header-container */
+.header-container .logo-group {
+  gap: 12px;
+}
+.header-container .logo-group > a {
+  width: 51px;
+  height: 54px;
+  background: url("/image/mascot-transparent.png") no-repeat 0 0 / cover;
+}
+.header-container .logo-group h1 a {
+  display: block;
+  width: 205px;
+  height: 27px;
+  background: url("/image/est-logo-header.png") no-repeat 0 0 / cover;
+}
+.header-container nav ul {
+  gap: 24px;
+}
+/* //header-container */
+
+/* pagination */
+.pagination {
+  padding: 8.5px;
+  gap: 15px;
+}
+.pagination button {
+  width: 40px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+.pagination button.active {
+  background-color: var(--green);
+}
+/* //pagination */
+
+/* Statistics Item */
+.statistics-item {
+  display: inline-block;
+  width: 408px;
+  padding: var(--base-unit) 0;
+  background: var(--ghost--gray);
+  border-radius: 10px;
+  box-shadow: var(--standard--shadow);
+  text-align: center;
+  box-sizing: border-box;
+}
+.statistics-item h6 {
+  font-size: var(--heading--m);
+  color: var(--dark--green);
+}
+.statistics-item p {
+  font-size: var(--heading--l);
+  color: var(--primary);
+}
+/* //Statistics Item */
