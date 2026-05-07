@@ -92,12 +92,6 @@
   padding: 30px 10px 10px;
 }
 
-.course-content a {
-  color: var(--dark--green);
-  font-size: var(--heading--x-s);
-  font-weight: bold;
-}
-
 .course-content p {
   color: var(--primary);
   font-size: var(--body--s);
@@ -112,6 +106,9 @@
 
 .course-content h3 {
   margin: 0 0 10px;
+  color: var(--dark--green);
+  font-size: var(--heading--x-s);
+  font-weight: bold;
 }
 /* courses 반응형 */
 /* 1100px 이하 */
