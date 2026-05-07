@@ -136,6 +136,7 @@
 
   .courses h2 {
     font-size: 24px;
+    text-align: center;
   }
 }
 /* target-audience 조승아*/
@@ -217,4 +218,95 @@
   height: 240px;
   display: block;
   object-fit: cover;
+}
+/* 반응형 */
+.target-pagination {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .target-audience {
+    padding: 60px 40px;
+  }
+
+  .target-list {
+    grid-template-columns: repeat(2, 371px);
+    justify-content: center;
+    gap: 40px;
+    width: fit-content;
+  }
+
+  .target-audience h2 {
+    font-size: var(--heading--m);
+    text-align: center;
+  }
+
+  .target-card {
+    width: 371px;
+  }
+}
+
+@media (max-width: 700px) {
+  .target-audience {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 27px;
+    box-sizing: border-box;
+    gap: 54px;
+  }
+
+  .target-audience h2 {
+    text-align: center;
+    font-size: var(--heading--s);
+    line-height: 1.2;
+    margin-top: 54px;
+  }
+
+  .target-list {
+    width: 100%;
+    display: block;
+    width: fit-content;
+  }
+
+  .target-card {
+    display: none;
+  }
+
+  .target-card:first-child {
+    display: flex;
+    width: 100%;
+    max-width: 371px;
+  }
+
+  .target-content {
+    width: 100%;
+    height: 197px;
+    padding: 27px;
+    box-sizing: border-box;
+  }
+
+  .target-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .target-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -27px;
+  }
+
+  .page-dot {
+    width: 40px;
+    height: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--green);
+  }
+
+  .page-dot.active {
+    background: var(--secondary);
+  }
 }
