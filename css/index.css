@@ -27,7 +27,7 @@
   height: 243px;
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--standard--shadow);
   display: flex;
   flex-direction: column;
@@ -37,8 +37,8 @@
 /* 이미지 영역 */
 .course-img-box {
   position: relative;
-  flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
+  border-radius: 12px 12px 0 0;
 }
 
 .course-img-box img {
@@ -78,6 +78,13 @@
   justify-content: center;
   align-items: center;
   line-height: 19.1px;
+}
+
+.course-img-wrap {
+  width: 300px;
+  height: 127px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
 }
 
 /* 글 영역 */
