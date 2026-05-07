@@ -106,3 +106,31 @@
 .course-content h3 {
   margin: 0 0 10px;
 }
+/* courses 반응형 */
+/* 1100px 이하 */
+@media (max-width: 1100px) {
+  .courses {
+    padding: 60px 40px;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(2, 300px);
+    column-gap: 40px;
+  }
+}
+
+/* 700px 이하 */
+@media (max-width: 700px) {
+  .courses {
+    padding: 40px 20px;
+  }
+
+  .course-list {
+    grid-template-columns: 300px;
+    row-gap: 40px;
+  }
+
+  .courses h2 {
+    font-size: 24px;
+  }
+}
