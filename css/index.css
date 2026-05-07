@@ -192,9 +192,12 @@
 
 /* 글 영역 */
 .target-content {
-  padding: var(--base-unit);
+  padding: 27px 27px 25px;
   height: 197px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .target-content h3 {
@@ -202,7 +205,6 @@
   font-weight: 600;
   line-height: 27px;
   color: var(--deep--green);
-  margin: 0 0 10px;
 }
 
 .target-content p {
@@ -357,13 +359,14 @@
   flex-shrink: 0;
 }
 
-.material-symbols-outlined {
+.material-icons {
   font-size: 42px;
-  font-variation-settings:
-    "FILL" 0,
-    "wght" 700,
-    "GRAD" 0,
-    "opsz" 48;
+  line-height: 1;
+  display: block;
+  font-weight: bold;
+}
+.top-btn {
+  gap: 0;
 }
 @media (max-width: 700px) {
   .side-bar {
