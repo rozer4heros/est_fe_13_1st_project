@@ -1,10 +1,16 @@
 /* 유태구 */
 /* Header */
+body {
+  position: relative;
+}
 header {
   width: 100%;
   background: var(--deep--green);
   position: fixed;
   z-index: 65535;
+}
+main {
+  padding-top: var(--base-unit-x2);
 }
 /* //Header */
 
@@ -465,6 +471,7 @@ header {
   color: var(--deep--green);
   word-break: keep-all;
   display: -webkit-box;
+  line-clamp: 5;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
@@ -538,6 +545,7 @@ header {
 
   .review-content p {
     display: -webkit-box;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -1652,3 +1660,44 @@ header {
 }
 
 /* 권유진 */
+
+/* Popup (프로젝트 종료 이후 추가됨) */
+.popup {
+  top: calc(var(--base-unit) * 4);
+  left: 192px;
+
+  border: none;
+  box-shadow: var(--standard--shadow);
+  margin: 0;
+
+  color: var(--deep--green);
+  background: var(--snow--gray);
+}
+.popup h2 {
+  line-height: var(--base-unit-x2);
+  color: var(--dark--green);
+}
+.popup hr {
+  border: var(--cool--gray) 1px solid;
+}
+.popup input,
+.popup label {
+  cursor: pointer;
+}
+.popup button {
+  border: var(--deep--green) 1px solid;
+  box-shadow: var(--standard--shadow);
+  cursor: pointer;
+}
+.popup a {
+  font-weight: bold;
+  color: var(--dark--green);
+}
+.popup a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .popup {
+    left: 24px;
+  }
+}
