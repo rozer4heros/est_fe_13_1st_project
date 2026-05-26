@@ -465,6 +465,7 @@ header {
   color: var(--deep--green);
   word-break: keep-all;
   display: -webkit-box;
+  line-clamp: 5;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
@@ -538,6 +539,7 @@ header {
 
   .review-content p {
     display: -webkit-box;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
